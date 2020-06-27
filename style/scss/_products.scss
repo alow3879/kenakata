@@ -1,0 +1,134 @@
+.section__products {}
+
+.section__title {
+	color: #222222;
+	font-family: 'Roboto Slab', serif;
+	font-size: 35px;
+	font-weight: 400;
+	text-align: center;
+	margin: 100px auto 10px auto;
+}
+
+.section__description {
+	color: #919191;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0px auto 100px auto;
+}
+
+.cards {
+	.row {
+		justify-content: space-around;
+	}
+}
+
+.card {
+	max-width: 263px;
+	height: 392px;
+	text-align: center;
+	line-height: 1.1;
+	margin-bottom: 50px;
+}
+
+.card-menu {
+	display: flex;
+	position: relative;
+	max-width: 263px;
+	height: 330px;
+	border-radius: 4.5px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&:hover, &:focus {
+		background-color: #000;
+		.card-img {
+			opacity: 0.4;
+			transition: 0.3s;
+		}
+		.card-buttons {
+			display: block;
+		}
+	}
+}
+
+.card-img {
+	max-width: 263px;
+	height: 330px;
+	border-radius: 3px;
+}
+
+.card-buttons {
+	position: absolute;
+	display: none;
+}
+
+.card-button {
+	display: block;
+	margin: auto;
+	width: 120px;
+	height: 40px;
+	background: #f72464;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1;
+	box-shadow: 0 5px 30px rgba(31, 35, 37, 0.25);
+	border-radius: 3px;
+	margin-bottom: 12px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+	&:hover, &:focus {
+		background: #c91c51;
+	}
+}
+
+.card-title {
+	color: #222222;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 20px auto 0px auto;
+}
+
+.card-price {
+	color: #838b8f;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 10px auto 0px auto;
+}
+
+.price {
+	text-decoration: line-through;
+}
+
+.new-price {
+	color: #f72464;
+	font-weight: 700;
+}
+
+.section__button {
+	display: block;
+	width: 220px;
+	height: 40px;
+	color: #919191;
+	font-family: 'Lora', serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	margin: 20px auto 100px auto;
+	padding-top: 13px;
+	border: 1px solid #f72464;
+	border-radius: 3px;
+	&:hover, &:focus {
+		background-color: #f72464;
+		color: #fff;
+		transition: 0.3s;
+	}
+}

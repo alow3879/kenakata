@@ -1,0 +1,41 @@
+.section__subscribe {
+	.section__description {
+		text-transform: none;
+		font-size: 15px;
+		max-width: 511px;
+		margin-top: 24px;
+		margin-bottom: 44px;
+	}
+	margin-bottom: 100px;
+}
+
+.section__form-subscribe {
+	text-align: center;
+}
+
+.subscribe__input-email {
+	width: 250px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #f72464;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 27px;
+	margin-right: 5px;
+
+	&::placeholder {
+		color: #c4c4c4;
+	}
+}
+
+.subscribe__input-submit {
+	width: 125px;
+	height: 40px;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #f72464;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

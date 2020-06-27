@@ -1,0 +1,58 @@
+.section__blog {}
+
+.section__blog-posts {
+	justify-content: space-around;
+	display: flex;
+}
+
+.card-post {
+	max-width: 560px;
+	height: 165px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;	
+}
+
+.user-img {
+	max-width: 165px;
+	height: auto;
+	margin-right: 30px;
+}
+
+.user-post {
+	max-width: 357px;
+}
+
+.post-title {
+	margin: 0px;
+	padding: 0px;
+	color: #222222;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.67;
+}
+
+.post {
+	margin: 0px;
+	padding: 0px;
+	color: #898989;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.67;
+	margin: 7px 0px 7px 0px;
+}
+
+.post-button {
+	color: #222222;
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.post-button::after {
+	content: "___";
+	color: #fff;
+	background-position: 3px 8px;
+}

@@ -1,0 +1,18 @@
+/*	font-family: 'Muli', sans-serif;
+	font-family: 'Lora', serif;
+	font-family: 'Roboto Slab', serif; (вместо Droid Serif)*/
+
+body {
+	font-family: 'Muli', sans-serif;
+	padding-top: 10px;
+	margin: 0px;
+}
+
+@import 'header';
+@import 'menu';
+@import 'products';
+@import 'adventure';
+@import 'blog';
+@import 'subscribe';
+@import 'footer';
+@import 'cart';

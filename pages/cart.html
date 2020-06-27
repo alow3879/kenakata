@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KENAKATA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Muli:400,600,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style/css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="../style/css/main.css">
+</head>
+<body class="cart-body">
+  <div class="container">
+    <div class="menu">	
+      <div class="row">
+        <div class="logo col col-7 col-md-3 col-lg-2">kenakata</div>
+        <nav class="col col-1 col-md-7 col-lg-8">
+          <button class="menu-btn"><span></span></button>
+          <ul class="navigation">
+            <li class="nav-item"><a class="nav-links" href="#">Colection</a></li>
+            <li class="nav-item"><a class="nav-links" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-links" href="#">Women</a></li>
+            <li class="nav-item"><a class="nav-links" href="../index.html/#blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-links" href="#">Faq</a></li>
+          </ul>          
+        </nav>
+        <div class="col col-4 col-md-2 col-lg-2">
+          <a class="continue-shopping" href="../index.html">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-cart container">
+    <h2 class="header-cart__title">Your commodity:</h2>
+  </header>
+
+  <section class="section-commodities container">
+    <div class="empty-basket" v-if="Object.keys(cart).length === 0">
+      <p>Your basket is empty...</p>
+      <a class="continue-shopping" href="../index.html">Continue Shopping</a>
+    </div>
+    <div class="items">
+      <div v-for="item in inTheCart" class="item">
+        <img class="card-img" :src="item.img" alt="card">
+        <div class="item-info">
+          <p class="card-title">{{ item.productName }}</p>
+          <div class="card-price">
+            <span v-if="item.price !== 'undefined'" class="price">${{ item.price }}</span>
+            <span class="new-price">${{ item.discountPrice }}</span>
+          </div>
+        </div>
+        <div class="item-options">
+          <p class="price-for-items">$<span>{{ priceForItems(item) }}</span></p>
+          <div class="quantity">
+            <button class="minus" @click="decrement(item)">-</button>
+            <input class="quantity-input" type="number" v-model.number="quantity[item.id]" value="0">
+          <button class="plus" @click="increment(item)">+</button>
+          </div>
+        </div>
+        <button class="delete-item" @click="deleteItem(item)">&#10006;</button>
+      </div>
+    </div>
+    <div class="cart-info-wrapper">
+      <h4 class="total-price">Total Price: $<span> {{ totalPrice }}</span></h4>
+      <button class="clear-cart" @click="clearCart()">Clear the Basket</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__nav-links">
+      <a href="#" class="footer__nav-link">YOUR ACCOUNT</a>
+      <a href="#" class="footer__nav-link">CONTACT US</a>
+      <a href="#" class="footer__nav-link">TERMS OF SERVICE</a>
+    </div>
+    <div class="footer__nav-networks">
+      <a href="#" class="footer__nav-network"><img src="../image/icons/faceboook.svg" alt=""></a>
+      <a href="#" class="footer__nav-network"><img src="../image/icons/twitter.svg" alt=""></a>
+      <a href="#" class="footer__nav-network"><img src="../image/icons/instagram.svg" alt=""></a>
+      <a href="#" class="footer__nav-network"><img src="../image/icons/pinterest.svg" alt=""></a>
+    </div>
+    <p class="footer__info">Copyright © 2016 KenaKata. All Rights Reserved. Designed by Shuvo</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/cart.js"></script>
+
+</body>
