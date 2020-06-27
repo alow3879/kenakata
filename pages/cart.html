@@ -41,7 +41,7 @@
     </div>
     <div class="items">
       <div v-for="item in inTheCart" class="item">
-        <img class="card-img" :src="item.img" alt="card">
+        <img class="card-img" :src="'.' + item.img" alt="card">
         <div class="item-info">
           <p class="card-title">{{ item.productName }}</p>
           <div class="card-price">
