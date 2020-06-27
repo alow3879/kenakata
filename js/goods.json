@@ -4,83 +4,83 @@
 		"productName": "Cotton Polo Shirt",
 		"price": "100.00",
 		"discountPrice": "95.00",
-		"img":"/image/card/card1.png"
+		"img":"./image/card/card1.png"
 	},
 	{
 		"id": 1,
 		"productName": "Fine-knit Cardigan",
 		"price": "230.00",
 		"discountPrice": "199.00",
-		"img":"/image/card/card2.png"
+		"img":"./image/card/card2.png"
 	},
 	{
 		"id": 2,
 		"productName": "Kimono Cardigan",
 		"price": "85.00",
 		"discountPrice": "55.00",
-		"img":"/image/card/card3.png"
+		"img":"./image/card/card3.png"
 	},
 	{
 		"id": 3,
 		"productName": "Rustic Garter Set",
 		"price": "150.00",
 		"discountPrice": "125.00",
-		"img":"/image/card/card4.png"
+		"img":"./image/card/card4.png"
 	},
 	{
 		"id": 4,
 		"productName": "Cotton Maxi",
 		"price": "100.00",
 		"discountPrice": "95.00",
-		"img":"/image/card/card5.png"
+		"img":"./image/card/card5.png"
 	},
 	{
 		"id": 5,
 		"productName": "Anysize double",
 		"price": "230.00",
 		"discountPrice": "199.00",
-		"img":"/image/card/card6.png"
+		"img":"./image/card/card6.png"
 	},
 	{
 		"id": 6,
 		"productName": "Latex Catsuit",
 		"price": "85.00",
 		"discountPrice": "55.00",
-		"img":"../image/card/card7.png"
+		"img":"./image/card/card7.png"
 	},
 	{
 		"id": 7,
 		"productName": "Elit Aliquam",
 		"price": "150.00",
 		"discountPrice": "125.00",
-		"img":"../image/card/card9.png"
+		"img":"./image/card/card9.png"
 	},
 	{
 		"id": 8,
 		"productName": "Cotton Polo Shirt",
 		"price": "undefined",
 		"discountPrice": "95.00",
-		"img":"../image/card/card10.png"
+		"img":"./image/card/card10.png"
 	},
 	{
 		"id": 9,
 		"productName": "Fine-knit Cardigan",
 		"price": "undefined",
 		"discountPrice": "199.00",
-		"img":"../image/card/card11.png"
+		"img":"./image/card/card11.png"
 	},
 	{
 		"id": 10,
 		"productName": "Kimono Cardigan",
 		"price": "undefined",
 		"discountPrice": "55.00",
-		"img":"../image/card/card1.png"
+		"img":"./image/card/card1.png"
 	},
 	{
 		"id": 11,
 		"productName": "Rustic Garter Set",
 		"price": "undefined",
 		"discountPrice": "125.00",
-		"img":"../image/card/card2.png"
+		"img":"./image/card/card2.png"
 	}
 ]
